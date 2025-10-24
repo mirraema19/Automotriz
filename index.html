@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoDiag - Diagnóstico Automotriz Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero">
+        <nav>
+            <h1 class="logo">AutoDiag</h1>
+            <ul class="nav-links">
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#como-funciona">Cómo Funciona</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h2>Toma el control de tu auto. Tu asistente automotriz inteligente</h2>
+            <p>Diagnostica problemas, encuentra talleres de confianza y gestiona el historial de tu vehículo. Pasa del mantenimiento reactivo al proactivo.</p>
+            <a href="#contacto" class="cta-button">Únete a la Beta</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="ofertas" class="carousel-section">
+            <h2 class="section-title">Todo lo que necesitas para cuidar tu auto</h2>
+            <div class="slider-container">
+                <div class="slider-wrapper">
+                    <div class="slider-slide active" data-index="0">
+                        <img src="images/img1.png" alt="Diagnóstico Inteligente AutoIntell">
+                        <div class="slide-caption">
+                            <h3>Tu Auto Te Habla, Nosotros te Entendemos</h3>
+                            <p>Diagnósticos precisos con IA, directo en tu móvil.</p>
+                        </div>
+                    </div>
+                    <div class="slider-slide" data-index="1">
+                        <img src="images/img2.png" alt="Encuentra talleres verificados">
+                        <div class="slide-caption">
+                            <h3>Encuentra la Solución Correcta, Siempre</h3>
+                            <p>Talleres verificados y recomendaciones personalizadas.</p>
+                        </div>
+                    </div>
+                    <div class="slider-slide" data-index="2">
+                        <img src="images/img3.png" alt="Ahorra tiempo y dinero con gestión">
+                        <div class="slide-caption">
+                            <h3>Ahorra Tiempo y Dinero con Mantenimiento Inteligente</h3>
+                            <p>Gestión de citas y historial de servicios en un clic.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-dots">
+                    <span class="dot active" data-index="0"></span>
+                    <span class="dot" data-index="1"></span>
+                    <span class="dot" data-index="2"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="services-section">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Diagnóstico con IA</h3>
+                    <p>Describe el problema con tus palabras y nuestro chatbot con IA te dará un diagnóstico preliminar profesional al instante.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Red de Talleres</h3>
+                    <p>Accede a un directorio de talleres verificados, recomendados por su especialidad, ubicación y calificaciones de usuarios.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Gestión de Citas</h3>
+                    <p>Agenda, modifica y gestiona tus citas directamente desde la aplicación, optimizando tu tiempo y el del taller.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-history"></i>
+                    <h3>Historial Digital</h3>
+                    <p>Mantén un registro organizado de todos los servicios realizados en tus vehículos, con facturas y fotos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="como-funciona" class="how-it-works-section">
+            <h2 class="section-title">¿Cómo Funciona?</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-comment-dots"></i></div>
+                    <div class="timeline-content">
+                        <div class="content-wrapper">
+                            <img src="images/chat.jpg" alt="App de diagnóstico" class="app-screenshot">
+                            <div class="text-content">
+                                <h3>1. Diagnostica</h3>
+                                <p>Habla con nuestro asistente de IA 24/7. Describe los síntomas de tu vehículo en lenguaje cotidiano y obtén un análisis claro y preciso.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-search-location"></i></div>
+                    <div class="timeline-content right">
+                        <div class="content-wrapper">
+                             <img src="images/Taller.jpg" alt="App encontrando talleres" class="app-screenshot">
+                            <div class="text-content">
+                                <h3>2. Encuentra Talleres</h3>
+                                <p>Nuestro sistema de recomendación inteligente te mostrará los mejores talleres cercanos, basados en tus necesidades y opiniones reales.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-icon"><i class="fas fa-check-circle"></i></div>
+                    <div class="timeline-content">
+                        <div class="content-wrapper">
+                             <img src="images/citas.jpg" alt="App gestionando citas" class="app-screenshot">
+                            <div class="text-content">
+                                <h3>3. Gestiona Citas</h3>
+                                <p>Elige un taller, selecciona una fecha y hora, y agenda tu cita con un solo clic. Recibirás notificaciones y recordatorios.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Sé el Primero en Probar AutoDiag</h3>
+                    <p>Regístrate para recibir acceso anticipado, noticias exclusivas y ofertas especiales. Transforma la manera en que cuidas tu auto.</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" name="name" placeholder="Tu Nombre" required>
+                        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+                        <select name="vehicle_type">
+                            <option value="">Tipo de Vehículo</option>
+                            <option value="sedan">Sedán</option>
+                            <option value="suv">SUV</option>
+                            <option value="pickup">Pickup</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                        <button type="submit" class="cta-button">Solicitar Acceso</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="download-buttons">
+            <a href="#" target="_blank">
+                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/es_badge_web_generic.png" alt="Descargar en Google Play">
+            </a>
+        </div>
+        <p class="copyright-text">&copy; 2025 AutoDiag. Todos los derechos reservados.</p>
+        <p class="copyright-text">Politica de Privacidad </p>
+    </footer>
+
+
+    <script src="script.js" defer></script>
+</body>
+</html>
