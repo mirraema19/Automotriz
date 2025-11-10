@@ -40,7 +40,7 @@ body {
 
 /* --- Hero y Navegación --- */
 .hero {
-    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('images/fondo.png') no-repeat center center/cover;
+    background: linear-gradient(rgba(10, 25, 47, 0.8), rgba(10, 25, 47, 0.8)), url('images/hero-bg.jpg') no-repeat center center/cover;
     height: 100vh;
     color: #fff;
     display: flex;
@@ -52,7 +52,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 5%;
+    padding: 1rem 5%; /* Reduje el padding para que la barra no sea tan alta */
     position: fixed;
     width: 100%;
     background: rgba(10, 25, 47, 0.85);
@@ -60,12 +60,22 @@ nav {
     z-index: 1000;
 }
 
-.logo {
-    font-family: 'Poppins', sans-serif;
-    color: var(--secondary-color);
-    font-size: 1.6rem;
+/* ===== CAMBIO: Se ajustaron los estilos para el logo de imagen ===== */
+.logo-link {
     z-index: 10;
 }
+
+.logo-image {
+    height: 40px; /* Ajusta esta altura según el tamaño de tu logo */
+    width: auto;  /* Mantiene la proporción */
+    transition: opacity 0.3s ease;
+}
+
+.logo-image:hover {
+    opacity: 0.9; /* Efecto sutil al pasar el mouse */
+}
+/* ===== FIN DEL CAMBIO DEL LOGO ===== */
+
 
 /* Estilos base del menú (Móvil) */
 .nav-links {
@@ -407,7 +417,8 @@ main section.visible {
     margin-top: 1rem;
 }
 
-/* ===== FOOTER MODIFICADO ===== */
+
+/* Footer */
 .footer {
     display: flex;
     flex-direction: column;
@@ -422,12 +433,12 @@ main section.visible {
 }
 
 .download-buttons img {
-    height: 50px; /* Controla la altura del badge */
+    height: 50px;
     transition: transform 0.2s ease-in-out;
 }
 
 .download-buttons img:hover {
-    transform: scale(1.05); /* Efecto de zoom sutil al pasar el mouse */
+    transform: scale(1.05);
 }
 
 .copyright-text {
@@ -435,13 +446,12 @@ main section.visible {
     font-size: 0.8rem;
     color: var(--slate);
 }
-/* ===== FIN DE FOOTER MODIFICADO ===== */
 
 
 /* ===== TABLET STYLES ===== */
 @media (min-width: 768px) {
-    .logo {
-        font-size: 1.8rem;
+    .logo-image {
+        height: 45px; /* Un poco más grande en tablets */
     }
 
     .hamburger-menu {
